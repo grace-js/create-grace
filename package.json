@@ -1,0 +1,22 @@
+{
+  "name": "create-grace",
+  "version": "0.0.1",
+  "description": "Create a new Grace app",
+  "homepage": "https://docs.gracejs.dev",
+  "license": "MIT",
+  "typings": "dist/cli.d.ts",
+  "scripts": {
+    "start": "bun run lib/index.js"
+  },
+  "bin": {
+    "create-grace": "./lib/index.js"
+  },
+  "type": "module",
+  "devDependencies": {},
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "shelljs": "^0.8.5"
+  }
+}
