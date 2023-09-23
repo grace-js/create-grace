@@ -1,7 +1,7 @@
 import {cors, createGrace, logger} from "@grace-js/grace";
 import {join} from "node:path";
 
-export const app = createGrace({debug: true})
+export const app = createGrace()
     .registerPlugin(cors({}))
     .registerPlugin(logger())
     .registerRoutes(join(import.meta.dir, "routes/**/*.ts"))
